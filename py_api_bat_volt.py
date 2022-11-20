@@ -26,10 +26,10 @@ api_call="https://api.studer-innotec.com/api/v1/installation/user-info/%s?device
 
 resp = requests.get(api_call,headers=headers)
 resp_dict = resp.json()
-request_status = resp_dict['status']
-battery_volt = resp_dict['floatValue']
 
-if (resp_dict['status']=="OK"):
-    print(battery_volt)
-else:
-    print("Error status: %s" % (resp_dict['status']))
+try:
+  request_status = resp_dict['status']
+  battery_volt = resp_dict['floatValue']
+  print(battery_volt)
+except:
+  print("Check creds file / connection to API")
