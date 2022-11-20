@@ -2,6 +2,9 @@
 
 Some sample python scripts to get information about power devices from Studer Innotec API service.
 
+*MODIFY creds.py file 
+*RUN python command
+
 Examples
 
 Get battery SOC from XTM device:
