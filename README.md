@@ -20,6 +20,7 @@ I've left the other scripts in the repo for reference.
 #Examples
 --
 
+
 *Get syntopic command*
 
 Retrieve a bunch of parameters in json format, with output similar to:
