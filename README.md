@@ -1,4 +1,4 @@
-# py-studer-api-examples
+## py-studer-api-examples
 
 Some sample python scripts to get information about power devices from Studer Innotec API service.
 
@@ -10,17 +10,16 @@ py_api_syntopic.py
 I've left the other scripts in the repo for reference.
 
 
-Setup
-
------
+#Setup
+--
 
 *MODIFY creds.py file
 
 *RUN python command
 
-Examples
+#Examples
+--
 
---------
 *Get syntopic command*
 
 Retrieve a bunch of parameters in json format, with output similar to:
@@ -32,33 +31,26 @@ Retrieve a bunch of parameters in json format, with output similar to:
 
 *General Get info command*
 
+
 Retrieve the value for the parameter specified as -i XXXX where XXXX is an property/info id
 
-'''
-python3.10  get_info_id.py -i 7032
-'''
+> python3.10  get_info_id.py -i 7032
 
-Return value: 89
+> Return value: 89
 
 
-*Get battery SOC from XTM device Command*	
+**Get battery SOC from XTM device Command**
 
-'''
-python3.10 py_api_bat_soc.py
-'''
+> python3.10 py_api_bat_soc.py
 
-Return value: 82.0
+> Return value: 82.0
 
-*Get battery voltage from XTM device Command*
+**Get battery voltage from XTM device Command**
 
-'''
-python3.10 py_api_bat_volt.py          
-'''
+> python3.10 py_api_bat_volt.py          
 
-Return value: 49.59375
+> Return value: 49.59375
 
 --
 
-Studer-Innotec API Swagger Docs:
-
-https://api.studer-innotec.com/swagger/ui/index
+[Studer-Innotec API Swagger Docs](https://api.studer-innotec.com/swagger/ui/index)
